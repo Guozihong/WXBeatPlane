@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{82F9F9E2-FD9C-A784-C8C8-3699914D9A70}") = "WXBeatPlane", "Assembly-CSharp.csproj", "{3F2FB9A9-0751-4360-2D8A-BBBE18DA213B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F2FB9A9-0751-4360-2D8A-BBBE18DA213B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2FB9A9-0751-4360-2D8A-BBBE18DA213B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2FB9A9-0751-4360-2D8A-BBBE18DA213B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2FB9A9-0751-4360-2D8A-BBBE18DA213B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

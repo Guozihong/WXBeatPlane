@@ -1,0 +1,60 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class enemyPlane : MonoBehaviour {
+
+	public float speed = 2;
+	public int lifeValue = 1;
+	public int value = 100;
+
+	public int dieAnimateFrame = 10;
+	public Sprite[] dieSpriteArr;
+	private float dieTimer = 0;
+
+	private bool isDie = false;
+	private SpriteRenderer spriteRender;
+	// Use this for initialization
+	void Start () {
+		spriteRender = gameObject.GetComponent<SpriteRenderer> ();
+	}
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "Bullet") {
+			beHit ();
+		}
+	}
+//	void OnCollisionEnter2D(Collision2D other)
+//	{
+//		print ("enemy collision");
+//	}
+	// Update is called once per frame
+	void Update () {
+		transform.Translate (Vector3.down * speed * Time.deltaTime);
+		if (transform.position.y < -5.4f) {
+			Destroy (this.gameObject);
+		}
+		if (isDie) {
+			dieTimer += Time.deltaTime;
+			int index = (int)(dieTimer / (1f / dieAnimateFrame));
+			spriteRender.sprite = dieSpriteArr [index];
+			if (index+1 >= dieSpriteArr.Length) {
+				die ();
+			}
+		}
+	}
+
+	void beHit()
+	{
+		if (!isDie) {
+			lifeValue--;
+			if (lifeValue <= 0) {
+				this.isDie = true;
+			}
+		}
+
+	}
+
+	void die(){
+		GameObject.Destroy (gameObject);
+	}
+}

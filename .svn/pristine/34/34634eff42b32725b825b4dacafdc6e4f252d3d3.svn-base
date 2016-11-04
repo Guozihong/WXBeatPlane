@@ -1,0 +1,26 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpits\enemyPlane.cs">
+    <Files>
+      <File FileName="Assets\Scrpits\enemyPlane.cs" Line="16" Column="32" />
+      <File FileName="Assets\GameManager.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scrpits\mainRole.cs" Line="60" Column="20" />
+      <File FileName="Assets\award.cs" Line="10" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="Unity3D_WXBeatPlane" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="award" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
